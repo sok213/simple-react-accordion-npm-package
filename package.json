@@ -4,6 +4,13 @@
     "description": "React Boilerplate Component for npm",
     "main": "./lib/SimpleReactAccordion.js",
     "license": "MIT",
+    "keywords": [
+      "react",
+      "accordion",
+      "widget",
+      "component",
+      "simple"
+    ],
     "scripts": {
         "build": "webpack"
     },
