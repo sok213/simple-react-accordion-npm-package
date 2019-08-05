@@ -1,0 +1,269 @@
+/* 
+* Typography
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+/*
+* Color Variables
+*/
+
+$light-grey: #eee;
+$med-grey: #666;
+$dark-grey: #444;
+$highlight-color: black;
+$basic-shadow: 0 1px 8px rgba(#000,.25);
+
+
+/*
+* Animation Variables
+*/
+
+$timing: .4s;
+$ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
+
+
+/* 
+* Global
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 20px 50px 20px;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: rgb(123, 151, 228);
+
+  @media screen and (max-width: 960px) {
+    padding-top: 0px;
+  }
+}
+
+/* Basic Accordion Styles */
+.accordion {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 20px;
+  }
+  
+  /* Radio Inputs */
+  input[name='panel'] {
+    display: none;
+  }
+
+  /* Labels */
+  label {
+    position: relative;
+    display: block;
+    padding: 1em;
+    font-size: 1.5em;
+    color: $med-grey;
+    cursor: pointer;
+    
+    &:after {
+      content: '+';
+      position: absolute;
+      right: 1em;
+      width: 1em;
+      height: 1em;
+      color: black;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+  
+  input:checked + label {
+    color: $highlight-color;
+    
+    &:after {
+      content: '-';
+      /* adjust line-height to vertically center icon */
+      line-height: .8em;
+    }
+  }
+  
+  /* Panel Content */
+  .accordion__content {
+    border-bottom: thin solid $light-grey;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    padding: 0 1.5em;
+    color: black;
+    transition: height $timing $ease;
+      
+    .accordion__body {
+      margin-top: 0px;
+      font-size: 15px;
+      line-height: 1.4em;
+      font-family: 'Roboto', arial, sans-serif;
+    }
+    
+  }
+
+  .accordion__header {
+    padding: 1em 5;
+    font-family: 'Roboto', arial, sans-serif;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+  
+}
+
+.sectionHeader {
+  text-align: center;
+}
+
+/* 
+* Size Variations
+*/
+
+input[name='panel']:checked ~ .accordion__content.accordion__contentSmall {
+  height: 100px;
+}
+
+input[name='panel']:checked ~ .accordion__content.accordion__contentMedium {
+  height: 170px;
+}
+
+input[name='panel']:checked ~ .accordion__content.accordion__contentLarge {
+  height: 210px;
+}
+
+.custom_noBorder {
+  .accordionBar:last-child .accordion__content {
+    border-bottom: none;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .accordionBar:last-child label {
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .accordionBar:last-child input:checked + label {
+    border-radius: 0px;
+  }
+}
+
+.basic {
+  box-shadow: $basic-shadow;
+  border-radius: 5px;
+
+  .accordionBar:last-child .accordion__content{
+    border-bottom: none;
+  }
+}
+
+.minimal {
+
+  .accordion__content {
+    border: none;
+  }
+
+  .minimalIcons {
+    position: absolute;
+    right: 1em;
+    width: 1em;
+    height: 1em;
+    color: black;
+    text-align: center;
+  }
+
+  .accordion__header {
+    color: black;
+  }
+
+  input:checked + label {
+    color: rgb(179, 179, 179);
+  }
+
+  .upArrow {
+    color: rgb(179, 179, 179);
+  }
+
+  label:after {
+    display: none;
+  }
+}
+
+.well {
+  @extend .custom_noBorder;
+  border-radius: 5px;
+  
+  .accordion__content {
+    transition: 0.3s;
+    background-color: rgb(245, 249, 252);
+  }
+
+  input[name='panel']:checked ~ .accordion__content {
+    padding-top: 20px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.29);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.29);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.29);
+  }
+}
+
+.dark {
+  background-color: rgb(43, 43, 43);
+  border-radius: 5px;
+  border-bottom: 2px solid rgb(36, 35, 35);
+  border-left: 1px solid rgb(95, 88, 88);;
+
+  .accordion__content {
+    border-color: rgb(75, 75, 75);
+  }
+
+  label:after {
+    color: rgb(206, 205, 205);
+  }
+
+  input:checked + label {
+    color: rgb(252, 249, 96);
+  }
+
+  input:checked + label:after {
+    color: rgb(252, 249, 96);;
+  }
+
+  .accordion__content {
+    color: rgb(197, 197, 197);
+  }
+
+  .accordion__header {
+    color: rgb(206, 205, 205);
+  }
+
+  @extend .custom_noBorder;
+}
+
+.professional {
+  box-shadow: $basic-shadow;
+  border-radius:  5px;
+  @extend .custom_noBorder;
+  
+  .accordionBar:nth-child(even) {
+
+    label {
+      background-color: rgb(235, 231, 231);
+    }
+
+    .accordion__content {
+      background-color: rgb(235, 231, 231);
+    } 
+  }
+}
