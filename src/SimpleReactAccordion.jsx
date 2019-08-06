@@ -59,7 +59,6 @@ class SimpleReactAccordion extends Component {
     return this.props.items.map((item, key) => {
       return (
         <div key={key} className="accordionBar">
-          <h2>THIS IS A TEST</h2>
           <input 
             type="radio" 
             name="panel" 
@@ -101,8 +100,7 @@ class SimpleReactAccordion extends Component {
           accordion
           ${this.applyTheme()}
         `}>
-        test
-          {/* {this.generateAccordion()} */}
+          {this.generateAccordion()}
         </div>
       </Fragment>
     );

@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/SimpleReactAccordion.jsx',
     output: {
         path: path.resolve('lib'),
-        filename: 'Soktest.js',
+        filename: 'SimpleReactAccordion.js',
         libraryTarget: 'commonjs2'
     },
     module: {
