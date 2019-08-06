@@ -80,4 +80,4 @@ items | array | | | Array of Objects. Objects require `header` and `content` pro
 
 #
 
-[Follow the developer on Instagram](https://www.instagram.com/just_soak_it_in)
+[Follow the developer on Instagram](https://raw.githubusercontent.com/sok213/simple-react-accordion-npm-package/master/demo_image.png)
