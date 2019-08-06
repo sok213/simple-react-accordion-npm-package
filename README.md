@@ -71,4 +71,7 @@ Property | type | Options | Default | Description
 theme | string | basic, minimal, well, professional, dark | basic | Sets the theme style.
 items | array | | | Array of Objects. Objects require `header` and `content` properties.
 
+
+#
+
 [Follow the developer on Instagram](https://www.instagram.com/just_soak_it_in/_)
