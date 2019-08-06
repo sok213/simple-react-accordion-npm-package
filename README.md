@@ -74,4 +74,4 @@ items | array | | | Array of Objects. Objects require `header` and `content` pro
 
 #
 
-[Follow the developer on Instagram](https://www.instagram.com/just_soak_it_in/_)
+[Follow the developer on Instagram](https://www.instagram.com/just_soak_it_in)

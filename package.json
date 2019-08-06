@@ -1,6 +1,6 @@
 {
     "name": "simple-react-accordion",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Simple accordion component for React app.",
     "main": "./lib/SimpleReactAccordion.js",
     "license": "MIT",
