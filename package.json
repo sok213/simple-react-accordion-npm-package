@@ -1,5 +1,5 @@
 {
-    "name": "simple-react-accordion-test",
+    "name": "simple-react-accordion",
     "version": "1.0.4",
     "description": "Simple accordion component for React app.",
     "main": "./lib/SimpleReactAccordion.js",
