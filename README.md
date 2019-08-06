@@ -68,7 +68,7 @@ render() {
 
 Theme used in photo is `professional`.
 
-![demo image of accordion](./demo_image.png)
+![demo image of accordion](https://raw.githubusercontent.com/sok213/simple-react-accordion-npm-package/master/demo_image.png)
 
 ## Properties
 
@@ -80,4 +80,4 @@ items | array | | | Array of Objects. Objects require `header` and `content` pro
 
 #
 
-[Follow the developer on Instagram](https://raw.githubusercontent.com/sok213/simple-react-accordion-npm-package/master/demo_image.png)
+[Follow the developer on Instagram](https://www.instagram.com/just_soak_it_in)
