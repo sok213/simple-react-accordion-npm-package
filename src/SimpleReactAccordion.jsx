@@ -101,7 +101,8 @@ class SimpleReactAccordion extends Component {
           accordion
           ${this.applyTheme()}
         `}>
-          {this.generateAccordion()}
+        test
+          {/* {this.generateAccordion()} */}
         </div>
       </Fragment>
     );
