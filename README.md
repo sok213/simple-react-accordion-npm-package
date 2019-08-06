@@ -64,6 +64,12 @@ render() {
 }
 ```
 
+# Preview
+
+Theme used in photo is `professional`.
+
+![demo image of accordion](./demo_image.png)
+
 ## Properties
 
 Property | type | Options | Default | Description
