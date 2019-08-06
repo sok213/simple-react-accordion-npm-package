@@ -4,6 +4,8 @@ A simple React accordion component that takes an array of JavaScript objects and
 
 Very simple, easy to implement, and features 4 pre-built themes.
 
+## [View demo page here](https://simple-react-accordion.herokuapp.com/)
+
 #Installation
   
   Install with npm
