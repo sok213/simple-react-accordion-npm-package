@@ -2,7 +2,7 @@
 
 A simple React accordion component that takes an array of JavaScript objects and processes it into a responsive accordion element. 
 
-Very simple, easy to implement, and features 4 pre-built themes.
+Very simple, easy to implement, and features 5 pre-built themes.
 
 ## [View demo page here](https://simple-react-accordion.herokuapp.com/)
 
