@@ -1,15 +1,15 @@
 {
     "name": "simple-react-accordion",
     "version": "1.0.3",
-    "description": "React Boilerplate Component for npm",
+    "description": "Simple accordion component for React app.",
     "main": "./lib/SimpleReactAccordion.js",
     "license": "MIT",
     "keywords": [
-      "react",
-      "accordion",
-      "widget",
-      "component",
-      "simple"
+        "react",
+        "accordion",
+        "widget",
+        "component",
+        "simple"
     ],
     "scripts": {
         "build": "webpack"
